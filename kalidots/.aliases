@@ -1,14 +1,12 @@
 alias zshconf="vi ~/.zshrc"
+alias aliasconf="vi ~/.aliases"
+alias srczsh="source ~/.zshrc"
 alias tmuxconf="vi ~/.config/tmux/tmux.conf"
 
+alias q="exit"
 alias mountshare="sudo mount -t vboxsf Public /home/kali/Public"
+alias syncpub="rsync -r ~/Public/* ~/Templates"
+alias vpnhtblab="sudo openvpn --config /home/kali/htb-lab.ovpn"
+alias vpnthm="sudo openvpn --config /home/kali/thm.ovpn"
 
-alias vpnhtblab="sudo openvpn --config /home/kali/lab.ovpn"
-
-function apt-updater {
-	apt update &&
-	apt dist-upgrade -Vy &&
-	apt autoremove -y &&
-	apt autoclean &&
-	apt clean 
-	}
+alias apt-updater="sudo apt update && sudo apt dist-upgrade -Vy && sudo apt autoremove -y && sudo apt autoclean && sudo apt clean"

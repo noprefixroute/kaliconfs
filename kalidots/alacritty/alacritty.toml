@@ -4,8 +4,9 @@ args = [ "-l", "-c", "tmux -u" ]
 
 [window]
 dynamic_padding = false
-decorations = "None"
+decorations = "Full"
 opacity = 0.9
+startup_mode = "Maximized"
 
   [window.padding]
   x = 3
@@ -14,7 +15,6 @@ opacity = 0.9
   [window.class]
   instance = "Alacritty"
   general = "Alacritty"
-
 
 [scrolling]
 history = 5000
